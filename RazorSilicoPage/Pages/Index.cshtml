@@ -1,0 +1,12 @@
+﻿@page "/"
+@model RazorSilicoPage.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+
+
+
+<partial name="~/Pages/Partials/HomePartial/_ShowCase.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._ShowCaseModel()" />
+
+<partial name="~/Pages/Partials/HomePartial/_Features.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._FeaturesModel()" />

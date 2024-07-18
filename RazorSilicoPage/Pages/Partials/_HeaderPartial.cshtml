@@ -1,0 +1,43 @@
+﻿
+<header>
+    <div class="container">
+        <a id="logo" href="home.html"><img src="images/logo_silicon.svg" alt=""></a>
+        <div id="menu">
+            <nav>
+                <a href="#showcase" class="menu-link">Overview</a>
+                <a href="#features" class="menu-link">Features</a>
+                <a href="contact.html" class="menu-link">Contact</a>
+            </nav>
+        </div>
+
+        <div class="btn-switch">
+            <label>Light</label>
+            <label for="switch-mode" class="switch">
+                <input type="checkbox" id="switch-mode" />
+                <div class="slider round"></div>
+            </label>
+            <label>Dark</label>
+        </div>
+        <div class="account-buttons">
+            <a href="signIn.html" class="btn-gray"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
+            <a href="signup.html" class="btn-theme"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
+        </div>
+    </div>
+
+    
+
+    <button id="abrir" class="open-menu">&#9776;</button>
+    <nav class="btn-mobile" id="nav">
+        <button class="close-menu" id="cerrar">X</button>
+        <ul class="nav-list">
+            <li><a href="#showcase">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="signIn.html" class="btn-gray"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a></li>
+            <li><a href="signup.html" class="btn-theme"><i class="fa-regular fa-user"></i><span>Sign up</span></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<link rel="stylesheet" href="~/css/headerAndfooter.css" asp-append-version="true" />
