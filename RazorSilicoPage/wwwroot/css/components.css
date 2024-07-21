@@ -1,16 +1,29 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+﻿/*@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+
+
 
 html, body {
     line-height: 160%;
     font-weight: 400;
     color: #565973;
-    font-family: "Manrope", sans-serif;
+    /*font-family: "Manrope", sans-serif;*/
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-
+:root {
+    --font-manrope: 'Manrope', sans-serif;
+    --gray-200: #d9d9d9;
+    --black-200: #090909;
+    --black-700: #0b0f19;
+    --black-800: #161616;
+    --white: #ffffff;
+    --theme: #007bff;
+}
 
 /*------ TEXT ----------*/
 .text-xs {
@@ -377,6 +390,25 @@ a {
         text-decoration: none;
         background: #565973;
         color: #FFFFFF;
+    }
+.btn-black {
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: var(--black-200);
+    color: var(--white);
+    border: none;
+}
+
+    .btn-black:hover {
+        text-decoration: none;
+        background: var(--white);
+        color: var(--black-200);
     }
 
 .btn-delete {

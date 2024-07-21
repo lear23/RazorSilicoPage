@@ -1,15 +1,31 @@
-﻿
+﻿<div class="navSignUp">
+    <a asp-page="/signup" class="navSignUp"><span>Sign up and get 20% off to your first order .<b> Sign Up Now </b></span></a>
+</div>
 <header>
+   
+
     <div class="container">
-        <a id="logo" href="home.html"><img src="images/logo_silicon.svg" alt=""></a>
+        <div class="starShowCase">
+            <a id="logo" asp-page="/index"><img src="~/images/SHOP.CO.svg" alt=""></a>         
+           
+        </div>
+        
         <div id="menu">
             <nav>
-                <a href="#showcase" class="menu-link">Overview</a>
-                <a href="#features" class="menu-link">Features</a>
-                <a href="contact.html" class="menu-link">Contact</a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="menu-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a class="link" href="#">Link 1</a>
+                        <a class="link" href="#">Link 2</a>
+                        <a class="link" href="#">Link 3</a>
+                    </div>
+                </li>
+                <a asp-page="#showcase" class="menu-link">On Sale</a>
+                <a asp-page="#features" class="menu-link">New Arrivals</a>
+                <a asp-page="contact.html" class="menu-link">Contact</a>
             </nav>
         </div>
-
+@* 
         <div class="btn-switch">
             <label>Light</label>
             <label for="switch-mode" class="switch">
@@ -17,10 +33,10 @@
                 <div class="slider round"></div>
             </label>
             <label>Dark</label>
-        </div>
+        </div> *@
         <div class="account-buttons">
-            <a href="signIn.html" class="btn-gray"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
-            <a href="signup.html" class="btn-theme"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
+            <a  class="btn-theme"><img src="~/images/Icons/Cartvite.svg" alt="Cart"><span>Cart</span></a>
+            <a asp-page="/SignIn" class="btn-theme"><img src="~/images/Icons/User2.svg" alt="User"><span>Sign In</span></a>
         </div>
     </div>
 

@@ -1,29 +1,42 @@
 ﻿<section id="showcase">
-    <img class="background-image" src="images/imageShowcase.svg" alt="showcase image">
-    <div class="container">
+    <img class="container background-image" src="~/images/ShowcasePhoto.svg"showcase image">
+    <div class="star1">
+        <img src="images/star.svg" alt="a star" class="star small-star">
+    </div>
+    <div class="star2">
+        <img src="images/StarBig.svg" alt="a star" class="star big-star">
+    </div> 
+    <div class="star3">
+        <img src="images/star.svg" alt="a star" class="star small-star">
+    </div>
+    <div class="star4">
+        <img src="images/star.svg" alt="a star" class="star small-star">
+    </div>
+ 
+
 
         <div class="content">
-            <h1 class="d4">Task Management Assistant You Gonna Love</h1>
-            <p>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p>
-            <a href="#" class="btn-theme">Get Started for free</a>
-            <h6>Largest companies use our tool to work efficiently</h6>
-            <div class="brands">
-                @if (Model.Brands != null)
-                {
-                    @foreach (var brand in Model.Brands)
-                    {
-                        
-                       <img src="@brand" alt="brand Image" />
-                      
-                    }
-                }
-                else
-                {
-                    <p>No brands available.</p>
-                }
+            <h1 class="d4">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a asp-page="/signup" class="btn-black" >Sign Up Now</a>
+            <div class="ShowcaseNumbers">
+                <div class="numbers">
+                    <h1>200+</h1>
+                    <p class="text-xs">International Brands</p>
+                </div>
+                <div class="numbers">
+                    <h1>2000+</h1>
+                    <p class="text-xs">Hight-Quality Products</p>
+                </div>
+                <div class="numbers">
+                    <h1>30,000+</h1>
+                    <p class="text-xs">Happy Customers</p>
+                </div>
             </div>
         </div>
-    </div>
+    
+
+   
 
 </section>
 

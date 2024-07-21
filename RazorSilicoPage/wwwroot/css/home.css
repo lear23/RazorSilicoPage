@@ -5,22 +5,152 @@
 #showcase {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 230px;
+     margin-bottom: 0;
 }
 
-    #showcase .container {
+    #showcase {
         position: relative;
         display: flex;
         justify-content: start;
-        align-items: center;
-        padding: 40px;
+        align-items: center;      
         height: auto;
         width: 100%;
     }
 
-.background-image {
+
+
+.star1{
     position: absolute;
-    right: 0px;
+    right: 200px;
+    top:100px;
+    width:100%;
+    height:auto;
+}
+@media (max-width: 768px) {
+    .star1 {
+        position: absolute;
+        left: 150px;
+        top:0px;
+    }
+}
+
+@media (max-width: 972px) {
+    .star1 {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+    }
+}
+.star2 {
+    position: absolute;
+    left: 500px;
+}
+
+@media (max-width: 575px) {
+    .star2 {
+        position: absolute;
+        left: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .star2 {
+        position: absolute;
+        top: 0;
+        left:0px;
+    }
+}
+
+@media (max-width: 970px) {
+    .star2 {
+        position: absolute;
+        top:50px;
+        left: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .star2 {
+        position: absolute;
+        top:0px;
+        left: 120px;
+    }
+}
+
+.star3 {
+    display:flex;
+    position: absolute;
+    left: 400px;
+}
+
+@media (min-width: 1200px) {
+    .star3 {
+        position: absolute;
+        right: 0px;
+    }
+}
+@media (max-width:768px) {
+    .star3 {
+        position: absolute;
+        top:80px;
+        left: 0px;
+    }
+}
+}
+
+@media (max-width:974px) {
+    .star3 {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .star3 {
+        position: absolute;
+        top: 80px;
+        left: 60px;
+    }
+}
+.star4 {
+ 
+    position: absolute;
+    left: 400px;
+}
+
+@media (min-width: 1200px) {
+    .star4 {
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media (max-width:768px) {
+    .star4 {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+    }
+}
+
+}
+
+@media (max-width:974px) {
+    .star4 {
+        position: absolute;
+        top: 30px;
+        right: 200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .star4 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
 }
 
 .content {
@@ -29,30 +159,57 @@
     text-align: left;
     height: auto;
     padding-top: 40px;
-    width: 480px;
+    width: 45%;
     height: auto;
-    line-height: 60px;
+    line-height: 40px;
 }
 
     .content a {
         display: inline-block;
-        margin-top: 30px;
-        margin-bottom: 60px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 
+.ShowcaseNumbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.numbers {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    position: absolute;
+    width:60%;
+    height:auto;
+    right: -60px;
+    bottom:0px;
+    z-index: -1;
+}
+
+
+/**/
 @media screen and (max-width: 1200px) {
 
 
     #showcase {
-        margin-bottom: 80px;
+      
     }
 
     .background-image {
         position: relative;
         right: auto;
-        margin-top: 20px;
-        width: 100%;
+     
     }
 
     .container {
@@ -85,9 +242,18 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media (max-width:580px) {
+    .brands img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
 
 @media (max-width:1200px) {
-    .brands img {
+    #showcase {
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -1,0 +1,33 @@
+﻿@page
+@model RazorSilicoPage.Pages.SignInModel
+@{
+    ViewData["Title"] = Model.PageTitle;
+}
+<link rel="stylesheet" href="~/css/signUp.css" asp-append-version="true" />
+
+<section id="createAccount">
+    <div class="container">
+        <form method="post">
+            <h1>Create Account</h1>
+            <p class="text-xs">Don't you have an account? <a asp-page="/SignUp">Sign up here.</a></p>
+            <div class="klientInfo">
+                <div class="box">
+                    <span asp-validation-for="Form.Email"></span>
+                    <label asp-for="Form.Email"></label>
+                    <input asp-for="Form.Email" />
+                </div>
+                <div class="box">
+                    <span asp-validation-for="Form.Password"></span>
+                    <label asp-for="Form.Password"></label>
+                    <input asp-for="Form.Password" />
+                </div>
+            </div>
+            <div class="box">
+                <span asp-validation-for="Form.Terms"></span>
+                <input asp-for="Form.Terms" type="checkbox" id="termsCheckbox" />
+                <label for="termsCheckbox">I agree to the <a asp-page="#">Terms</a> & <a asp-page="#">Conditions</a></label>
+            </div>
+            <button type="submit" class="btn-gray">Sign Up</button>
+        </form>
+    </div>
+</section>

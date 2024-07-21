@@ -1,0 +1,132 @@
+﻿/* ---------------------SLIDER-------------------- */
+/*.slider {
+    width: 100%;
+    background-color: #090909;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .slider {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.slide-track {
+    display: flex;
+    width: calc(300px * 10);
+    animation: scroll 80s linear infinite;
+}
+
+.slide {
+    flex: 0 0 300px;*/ /* Ancho fijo para cada slide */
+    /*margin-right: 40px;*/ /* Espaciado entre slides */
+/*}
+
+    .slide img {*/
+        /* width: 300px; 
+  height: 200px; */
+        /*object-fit: cover;*/ /* Ajusta la imagen sin distorsionar */
+    /*}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 10));*/ /* Ajusta esto según el número de slides y su ancho */
+    /*}
+}*/
+
+
+/* ---------------------SLIDER-------------------- */
+.slider {
+    width: 100%;
+    background-color: #090909;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .slider {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.slide-track {
+    display: flex;
+    width: calc(300px * 10 + 2vw * 10); /* Ajustamos el ancho según el número de slides */
+    animation: scroll 120s linear infinite; /* Ajuste de la velocidad de la animación */
+}
+
+.slide {
+    flex: 0 0 80vw; /* Usamos vw para que las slides sean relativas al ancho de la ventana */
+    max-width: 300px; /* Máximo ancho de 300px */
+    margin-right: 2vw; /* Espaciado entre slides relativo al viewport width */
+}
+    .slide img {
+        width: 30%; /* La imagen ocupa todo el ancho de la slide */
+        height: auto; /* Ajuste automático de la altura */
+        object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 10 - 2vw * 10)); /* Ajusta esto según el número de slides y su ancho */
+    }
+}
+
+/* Media queries adicionales para manejar diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 90vw; /* Aumentamos el ancho relativo de las slides */
+        max-width: none; /* Removemos el máximo ancho */
+    }
+
+    .slide-track {
+        width: calc(90vw * 10 + 2vw * 10); /* Ajustamos el ancho del track según el nuevo tamaño de las slides */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-90vw * 10 - 2vw * 10)); /* Ajustamos según el nuevo ancho */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        flex: 0 0 100vw; /* Las slides ocupan todo el ancho de la ventana */
+        margin-right: 0; /* Sin espacio entre slides */
+    }
+
+    .slide-track {
+        width: 1000vw; /* Ajustamos el ancho del track según el nuevo tamaño de las slides */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-1000vw); /* Ajustamos según el nuevo ancho */
+        }
+    }
+}
+

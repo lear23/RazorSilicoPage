@@ -5,8 +5,11 @@
 }
 <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
 
+<div class="container">
 
+    <partial name="~/Pages/Partials/HomePartial/_ShowCase.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._ShowCaseModel()" />
 
-<partial name="~/Pages/Partials/HomePartial/_ShowCase.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._ShowCaseModel()" />
+    <partial name="~/Pages/Partials/HomePartial/_Slider.cshtml" />
+    <partial name="~/Pages/Partials/HomePartial/_Features.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._FeaturesModel()" />
+</div>
 
-<partial name="~/Pages/Partials/HomePartial/_Features.cshtml" model="new RazorSilicoPage.Pages.Partials.HomePartial._FeaturesModel()" />

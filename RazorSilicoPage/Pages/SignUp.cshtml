@@ -1,0 +1,56 @@
+﻿@page
+@model RazorSilicoPage.Pages.SignUpModel
+@{
+    ViewData["Title"] = Model.PageTitle;
+    
+}
+<link rel="stylesheet" href="~/css/signUp.css" asp-append-version="true" />
+
+<section id="createAccount">
+    <div class="container">
+        <form method="post" >
+            <h1>Create Account</h1>
+            <p class="text-xs">Already have an acount? <a asp-page="/SignIn">Sign in here.</a></p>
+            <div class="klientInfo">
+                <div class="klientbox">
+                    <span asp-validation-for="@Model.Form.FirstName"></span>
+                    <label asp-for="@Model.Form.FirstName"></label>
+                    <input asp-for="@Model.Form.FirstName">
+               
+                </div>
+                <div class="klientbox">
+                    <span asp-validation-for="@Model.Form.LastName"></span>
+                    <label asp-for="@Model.Form.LastName"></label>
+                    <input asp-for="@Model.Form.LastName" >
+                 
+                </div>
+            </div>
+            <div class="box">
+                <span asp-validation-for="@Model.Form.Email"></span>
+                <label asp-for="@Model.Form.Email"></label>
+                <input asp-for="@Model.Form.Email" >
+             
+            </div>
+            <div class="box">
+                <span asp-validation-for="@Model.Form.Password"></span>
+                <label asp-for="@Model.Form.Password"></label>
+                <input asp-for ="@Model.Form.Password">
+               
+            </div>
+            <div class="box">
+                <span asp-validation-for="@Model.Form.ConfirmPassword"></span>
+                <label asp-for="@Model.Form.ConfirmPassword"></label>
+                <input asp-for="@Model.Form.ConfirmPassword" >
+             
+            </div>
+            <span asp-validation-for="@Model.Form.Terms"></span>
+            <input type="checkbox">
+            <label for="checkbox">I agree to the <a asp-page="#">Terms</a> & <a asp-page="#">Conditions</a></label>
+            
+            <button type="submit" class="btn-gray">Sign Up</button>
+        </form>
+
+    </div>
+
+</section>
+

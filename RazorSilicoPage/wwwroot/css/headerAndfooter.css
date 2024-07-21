@@ -1,4 +1,16 @@
-﻿
+﻿.navSignUp{
+    background-color: #090909;
+    color: #d9d9d9;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+@media (max-width: 592px) {
+    .navSignUp {
+        display: none;
+    }
+}
+
 header {
     padding: 15px 0;
 }
@@ -38,17 +50,6 @@ header .container #menu nav {
     gap: 15px;
 }
 
-header .container .btn-switch {
-    grid-area: switch;
-    display: none;
-}
-
-@media (min-width: 992px) {
-    header .container .btn-switch {
-        display: block;
-    }
-}
-
 header .container .account-buttons {
     grid-area: buttons;
     display: none;
@@ -61,8 +62,37 @@ header .container .account-buttons {
     }
 }
 
-/* ---------MOBIL-------- */
 
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d9d9d9;
+    min-width: 160px;
+    padding:10px;
+    box-shadow: 0px 8px 16px 0px rgba(235, 232, 255, 0.2);
+    z-index: 1;
+}
+
+    .dropdown-content .link {
+        color: rgb(10, 10, 10);
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .btn-mobile {
     opacity: 0;
@@ -115,7 +145,7 @@ header .container .account-buttons {
     background-color: #f1f4fa;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .open-menu {
         display: none;
     }
@@ -125,18 +155,9 @@ header .container .account-buttons {
     }
 }
 
-.avatar-img {
+/*.avatar-img {
     width: 50px;
-    height: auto; 
-}
-/*@media screen and (max-width:992px) {
-    .avatar-img {
-        display: none;
-    }
-
-    .btn-mobile {
-        display: none;
-    }
+    height: auto;
 }
 */
 
