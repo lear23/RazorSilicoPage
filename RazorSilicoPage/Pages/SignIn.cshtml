@@ -10,24 +10,31 @@
         <form method="post">
             <h1>Create Account</h1>
             <p class="text-xs">Don't you have an account? <a asp-page="/SignUp">Sign up here.</a></p>
-            <div class="klientInfo">
-                <div class="box">
-                    <span asp-validation-for="Form.Email"></span>
+            <div class="box">
+                <div class="boxAlert">
                     <label asp-for="Form.Email"></label>
-                    <input asp-for="Form.Email" />
+                    <span asp-validation-for="Form.Email"></span>
                 </div>
-                <div class="box">
-                    <span asp-validation-for="Form.Password"></span>
-                    <label asp-for="Form.Password"></label>
-                    <input asp-for="Form.Password" />
-                </div>
+                <input asp-for="Form.Email">
+
             </div>
             <div class="box">
-                <span asp-validation-for="Form.Terms"></span>
-                <input asp-for="Form.Terms" type="checkbox" id="termsCheckbox" />
-                <label for="termsCheckbox">I agree to the <a asp-page="#">Terms</a> & <a asp-page="#">Conditions</a></label>
+                <div class="boxAlert">
+                    <label asp-for="Form.Password"></label>
+                    <span asp-validation-for="Form.Password"></span>
+                </div>
+                <input asp-for="Form.Password">
+
             </div>
-            <button type="submit" class="btn-gray">Sign Up</button>
+            <div class="boxAlert">
+                <div class="boxAlert">
+                    <label>
+                        <input asp-for="Form.Terms" type="checkbox"> Remember me
+                    </label>
+                    <span class="alert-error" asp-validation-for="Form.Terms"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn-theme">Sign Up</button>
         </form>
     </div>
 </section>

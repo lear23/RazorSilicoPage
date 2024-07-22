@@ -14,55 +14,53 @@
      
               <div class="box">
                   <div class="boxAlert">
-                    <label asp-for="@Model.Form.FirstName"></label>
-                    <span asp-validation-for="@Model.Form.FirstName"></span>
+                    <label asp-for="Form.FirstName"></label>
+                    <span asp-validation-for="Form.FirstName"></span>
                   </div>                  
-                  <input asp-for="@Model.Form.FirstName">
+                  <input asp-for="Form.FirstName">
                
               </div>
               <div class="box">
                 <div class="boxAlert">
-                   <label asp-for="@Model.Form.LastName"></label>
-                   <span asp-validation-for="@Model.Form.LastName"></span>
+                   <label asp-for="Form.LastName"></label>
+                   <span asp-validation-for="Form.LastName"></span>
                 </div>
-                  <input asp-for="@Model.Form.LastName" >
+                  <input asp-for="Form.LastName" >
                  
               </div>
         
             <div class="box">
                 <div class="boxAlert">
-                    <label asp-for="@Model.Form.Email"></label>
-                    <span asp-validation-for="@Model.Form.Email"></span>
+                    <label asp-for="Form.Email"></label>
+                    <span asp-validation-for="Form.Email"></span>
                 </div>
-                <input asp-for="@Model.Form.Email" >
+                <input asp-for="Form.Email" >
              
             </div>
             <div class="box">
                  <div class="boxAlert">
-                    <label asp-for="@Model.Form.Password"></label>
-                     <span asp-validation-for="@Model.Form.Password"></span>
+                    <label asp-for="Form.Password"></label>
+                     <span asp-validation-for="Form.Password"></span>
                 </div>
-                <input asp-for ="@Model.Form.Password">
+                <input asp-for ="Form.Password">
                
             </div>
             <div class="box">
                  <div class="boxAlert">
-                     <label asp-for="@Model.Form.ConfirmPassword"></label>
-                     <span asp-validation-for="@Model.Form.ConfirmPassword"></span>
+                     <label asp-for="Form.ConfirmPassword"></label>
+                     <span asp-validation-for="Form.ConfirmPassword"></span>
                 </div>
-                <input asp-for="@Model.Form.ConfirmPassword" >
+                <input asp-for="Form.ConfirmPassword" >
              
             </div>
             <div class="boxAlert">
                 <div class="boxAlert">
                     <label>
-                        <input asp-for="@Model.Form.Terms" type="checkbox"> I agree to the <a asp-page="#">Terms</a> & <a asp-page="#">Conditions</a>
+                        <input asp-for="Form.Terms" type="checkbox"> I agree to the <a asp-page="#">Terms</a> & <a asp-page="#">Conditions</a>
                     </label>
-                    <span asp-validation-for="@Model.Form.Terms"></span>
-                </div>            
-           
-             
-            </div>
+                    <span asp-validation-for="Form.Terms"></span>
+                </div>        
+             </div>
             <button type="submit" class="btn-theme">Sign Up</button>
         </form>
 

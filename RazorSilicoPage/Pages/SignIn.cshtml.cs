@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using RazorSilicoPage.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace RazorSilicoPage.Pages
@@ -7,7 +8,7 @@ namespace RazorSilicoPage.Pages
     public class SignInModel : PageModel
     {
         [BindProperty]
-        public SignInForm? Form { get; set; }
+        public SignInViewModel Form { get; set; } = new SignInViewModel();
 
         public string PageTitle { get; set; } = "Sign In";
 
@@ -23,22 +24,7 @@ namespace RazorSilicoPage.Pages
                 return Page();
             }
             return RedirectToPage("/index");
-
-        }
-
-        public class SignInForm
-        {
-            [Required]
-            [EmailAddress]
-            public string? Email { get; set; }
-
-            [Required]
-            [DataType(DataType.Password)]
-            public string? Password { get; set; }
-
-            [Required]
-            public bool Terms { get; set; }
-        }
+        }            
     }
 
 }
