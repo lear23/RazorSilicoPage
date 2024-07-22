@@ -25,10 +25,19 @@ namespace RazorSilicoPage.Pages
         {
             if (!ModelState.IsValid)
             {
+                // Debugging: Logga valideringsfel
+                foreach (var state in ModelState)
+                {
+                    foreach (var error in state.Value.Errors)
+                    {
+                        Console.WriteLine($"Error in {state.Key}: {error.ErrorMessage}");
+                    }
+                }
+
                 return Page();
             }
             return RedirectToPage("/index");
-
         }
+
     }
 }
