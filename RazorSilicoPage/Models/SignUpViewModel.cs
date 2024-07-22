@@ -34,6 +34,12 @@ namespace RazorSilicoPage.Models
 
         [Display(Name = "Terms & Conditions")]
         [Required(ErrorMessage = "You must agree to the terms and conditions.")]
+        [CheckBoxRequired(ErrorMessage = "You have to accept the Terms & Conditions to proceed,")]
         public bool Terms { get; set; }
+    }
+
+    public class CheckBoxRequired : ValidationAttribute
+    {
+        public override bool IsValid(object? value) => value is bool b && b;
     }
 }

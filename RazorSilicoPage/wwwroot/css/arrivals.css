@@ -1,0 +1,68 @@
+﻿/* ---------------ARRIVALS-------------------------- */
+
+
+.arrivals {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+@media (max-width: 794px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height:auto;
+        gap:0;
+    }
+}
+
+@media (max-width: 594px) {
+    .features {
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+    }
+}
+
+
+.discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .discount span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffbbbb;
+        color: rgb(255, 75, 75);
+        border: 1px solid transparent;
+        border-radius: 40px;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+.price-original {
+    color: gray;
+    text-decoration: 1px solid line-through;
+    margin-right: 10px;
+}
+.arrivalsCard {
+    padding:20px;
+    width: 100%;
+    height: auto;
+}
+
+.arrivalsCard img{
+    width:100%;
+    height:auto;
+}
+.clothescard img {
+    width: 40%;
+    height: auto;
+}

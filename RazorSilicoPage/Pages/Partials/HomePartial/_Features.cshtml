@@ -1,27 +1,94 @@
-﻿<section id="features">
-    <div class="container">
-        <h1>What Do You Get with Our Tool?</h1>
-        <p>Make sure all your tasks are organized so you can set the priorities and focus on important.</p>
-        <div class="tool-features">
-           
-                @if (Model.Features != null)
-                {
-                    @foreach (var feature in Model.Features)
-                    {
-                    <div class="box">
-                        <img src="@feature.Icon" alt="brand Image" />
-                        <h5>@feature.Title</h5>
-                        <p>@feature.Description</p>
-                    </div>
-                    }
-                }
-                else
-                {
-                    <p>No brands available.</p>
-                }
-          
-           
-        </div>
+﻿
+<link rel="stylesheet" href="~/css/arrivals.css" asp-append-version="true" />
+
+<section id="features">
+    <div class="arrivals">
+        <span class="d3">New Arrivals</span>
     </div>
+    <div class="features">
+
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame1.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <h5>$120</h5>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame2.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <div class="discount">
+                <h5 class="price-discounted">$240</h5>
+                <h5 class="price-original">$260</h1>
+                <span>-20%</span>
+            </div>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame3.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <h5>$180</h5>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame4.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <div class="discount">
+                <h5 class="price-discounted">$130</h5>
+                <h5 class="price-original">$160</h5>
+                <span>-30%</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
 </section>
+<section id="features">
+    <div class="arrivals">
+        <span class="d3">New Arrivals</span>
+    </div>
+    <div class="features">
+
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame1.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <h5>$120</h5>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame2.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <div class="discount">
+                <h5 class="price-discounted">$240</h5>
+                <h5 class="price-original">
+                    $260</h1>
+                    <span>-20%</span>
+            </div>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame3.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <h5>$180</h5>
+        </div>
+        <div class="arrivalsCard">
+            <img src="images/clothes/Frame4.svg" alt="pant">
+            <P class="text-lg-bod">Vertical Striped Shirt</P>
+            <div class="clothescard"><img src="images/star5.svg" alt=""> 4.5/5</div>
+            <div class="discount">
+                <h5 class="price-discounted">$130</h5>
+                <h5 class="price-original">$160</h5>
+                <span>-30%</span>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+</section>
+
 
